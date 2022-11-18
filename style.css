@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* TEXTO---------------------------------------------------------------------------------- */
+
+h1{ 
+    position: relative;
+    top: 1rem;
+    padding-left: 3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+ }
+ h2{padding: 0 0.3rem 0 0.2rem;
+
+ }
+ a{
+    text-decoration: none;
+    color: black;
+ }
+ a:hover{
+    text-decoration: none;
+    color: red;
+  
+    font-size: 1.3rem;
+ }
+ p{
+    padding: 0.3rem 0rem 0.3rem 1rem ;
+ }
+/* HEADER---------------------------------------------------------------------------------- */
+header{
+    border: solid salmon;
+    width:100%;
+    height: 10vh;
+    display:flex;
+     background-image: url("assets/logo.jpeg");
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center;
+}
+.headerLogo{
+    width: 5%;
+}
+.headerNav{ 
+    display: flex;
+    justify-content:center;
+    position: relative;
+    left: 47rem;
+}
+.headerUl{
+    display: flex;
+    justify-content:space-between;
+    width: 26vw;
+}
+.listItem
+{ 
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    /* align-items alinahs os intens dentro da caixa */
+   font-size: 1.4rem;
+   font-weight: 200;
+}
+/* ----------------------------------------------------------------------------------- */
+#sobreMim{
+     border: solid rgb(114, 250, 196);
+    width:100%;
+    height: 90vh;
+
+}
+.meusDados{
+    border: solid rgb(141, 114, 250);
+    width:50vw;
+    height: 10vh;
+    /* display:flex; */
+    /* justify-content: space-between; */
+}
+.miniBio{
+    border: solid rgb(141, 114, 250);
+    width:50vw;
+    height: 50vh;
+ 
+}
