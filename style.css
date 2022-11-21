@@ -4,84 +4,170 @@
     box-sizing: border-box;
 }
 /* TEXTO---------------------------------------------------------------------------------- */
-
-h1{ 
-    position: relative;
-    top: 1rem;
-    padding-left: 3rem;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 2em;
- }
- h2{padding: 0 0.3rem 0 0.2rem;
-
- }
- a{
-    text-decoration: none;
-    color: black;
- }
- a:hover{
-    text-decoration: none;
-    color: red;
-  
-    font-size: 1.3rem;
- }
- p{
-    padding: 0.3rem 0rem 0.3rem 1rem ;
- }
-/* HEADER---------------------------------------------------------------------------------- */
-header{
-    border: solid salmon;
-    width:100%;
-    height: 10vh;
-    display:flex;
-     background-image: url("assets/logo.jpeg");
-     background-size: contain;
-     background-repeat: no-repeat;
-     background-position: center;
-}
-.headerLogo{
-    width: 5%;
-}
-.headerNav{ 
-    display: flex;
+h1{
+    color: white;
+    font-weight: 800;
+    font-size: 5em;
     justify-content:center;
     position: relative;
-    left: 47rem;
+    bottom: 3rem;
 }
-.headerUl{
+h2{ 
+    color: white;
+    font-weight: 400;
+    font-size: 3em;
+    text-align: left;
+    padding-left: 2rem;
+}
+/* p{
+    color: white;
+font-size:1.5em;
+text-align: justify;
+padding: 2rem 2rem 1.2rem 2rem;
+} */
+/* Main---------------------------------------------------------------------------------- */
+
+body{
+    background-color: gray;
+}
+header{
+    width: 100%;
+    height: 30vh;
+    /* background-image: url("assets/back1.jpeg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
-    justify-content:space-between;
-    width: 26vw;
+    justify-content:center;
+    align-items: center;
 }
-.listItem
-{ 
+.TittleHeader{
+    z-index: 1;
+    /* border: solid white; */
+    /* width: 30rem; */
+    /* margin-left: 3rem ; */
+    display: flex;
+    justify-content:center;
+    text-align: center;
+}
+.divHeader{
+    z-index: 2;
+    /* border: solid white; */
+    /* width: 60%; */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: absolute;
+    top: 10rem;
+}
+.navHeader{
+    display: flex;
+    /* justify-content:space-around; */
+        /* margin-left:2rem ; */
+}
+.UlHeader{
     list-style: none;
     display: flex;
-    justify-content:space-between;
-    align-items:center;
-    /* align-items alinahs os intens dentro da caixa */
-   font-size: 1.4rem;
-   font-weight: 200;
+    /* border: solid white; */
+    /* padding-left:9rem ; */
+    /* justify-content:space-between; */
+    /* padding-left: 3rem; */
 }
-/* ----------------------------------------------------------------------------------- */
-#sobreMim{
-     border: solid rgb(114, 250, 196);
-    width:100%;
-    height: 90vh;
-
+.ListHeader{
+    width: 20rem;
+    display: flex;
+    justify-content:space-evenly;
 }
-.meusDados{
-    border: solid rgb(141, 114, 250);
-    width:50vw;
-    height: 10vh;
-    /* display:flex; */
-    /* justify-content: space-between; */
+.ListHeader:hover{
+    transform: scale(1.2);
+    transition: ease-in-out 0.2s;
 }
-.miniBio{
-    border: solid rgb(141, 114, 250);
-    width:50vw;
-    height: 50vh;
- 
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+main{
+    width: 100%;
+    height: 200vh;
+    /* display: flex; */
+}
+/* main curriculo, formaçao */
+#CurriculoMainOne{
+    border: solid rgb(89, 34, 178);
+    width: 100%;
+    height: 70vh;
+    /* background-image: url("assets/back2.jpeg"); */
+    background-size: cover;
+    /* background-position-x: 4rem; */
+    background-repeat:no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.divCurriculoOne{
+    border: solid firebrick;
+    background-color: rgba(108, 93, 73, 0.415);
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+    width: 50vw;
+    height: 55vh;
+    padding-top:3rem ;
+    color: white;
+    font-size:1.5em;
+    text-align: justify;
+    padding: 2rem 2rem 1.2rem 2rem;
+}
+.divCurriculoTwo{
+    border: solid firebrick;
+    /* display: flex; */
+    text-align: justify;
+    margin-top: 3rem;
+    width: 20vw;
+    height: 55vh;
+    color: white;
+    font-size:1.5em;
+    text-align: justify;
+    padding: 2rem 2rem 1.2rem 2rem;
+}
+/*  main mini bio */
+#MiniBioMainTwo{
+    border: solid rgb(89, 34, 178);
+    width: 100%;
+    height: 100vh;
+    /* background-image: url("assets/back2.jpeg"); */
+    background-size: cover;
+    /* background-position-x: 4rem; */
+    background-repeat:no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.divMiniBioOne{
+    border: solid firebrick;
+    background-color: rgba(108, 93, 73, 0.415);
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+    width: 45vw;
+    height: 75vh;
+    padding-top:3rem ;
+    color: white;
+    font-size:1.5em;
+    text-align: justify;
+    padding: 2rem 2rem 1.2rem 2rem;
+}
+.divMiniBioTwo{
+    border: solid firebrick;
+    text-align: justify;
+    margin-top: 3rem;
+    width: 35vw;
+    height: 55vh;
+    color: white;
+    font-size:1.2em;
+    text-align: justify;
+    padding: 2rem 2rem 1.2rem 3rem;
 }
